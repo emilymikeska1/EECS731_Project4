@@ -1,0 +1,14 @@
+Feature engineering:
+
+The main feature engineering that I did include encoding the team names, converting some of the data types, and adding a feature called 'score_diff'. 
+
+I used the pandas one hot encoding functionality called 'get_dummies', rather than the sklearn one hot encoding functionality, because it interfaces better with pandas dataframes since it is native to pandas. 
+
+At first I attempted to encode the pitchers, however, after google colab crashed, I realized that the pitcher stats were probably more important than the individual pitcher names. 
+
+Models:
+
+If I had enought memory, I would have liked to test the MultiOutputRegression model with LinearRegression to compare it to the RandomForestRegression and GradientBoostingRegression models. 
+
+Also, I would have like to view some of the trees from the RandomForestRegression model. I think that the issues I encountered were caused by the multioutput nature of the model. 
+
