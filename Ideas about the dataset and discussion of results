@@ -12,3 +12,10 @@ If I had enought memory, I would have liked to test the MultiOutputRegression mo
 
 Also, I would have like to view some of the trees from the RandomForestRegression model. I think that the issues I encountered were caused by the multioutput nature of the model. 
 
+Discussion of Results:
+
+The RandomForestRegression model was able to predict both score1 and score2, and the mean squared error was 0.00004791. I attempted 10-fold cross validation of this model, but it crashed google colab multiple times.
+
+The GradientBoostingRegression model was also able to make predictions, but its results are not as intuitive. In addition, it's mean squared error was quite large. One useful aspect of this model was the feature importance graph, which shows the 22 most important features. 
+
+The MultiOutputRegression model was not able to train or make any predictions because it crashed google colab. 
